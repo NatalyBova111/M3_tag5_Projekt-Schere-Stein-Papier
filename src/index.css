@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light dark;
+  --bg: #3a2e73;   
+  --fg: #f3f3f6;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  display: grid;
+  place-items: center;
+}
+
+.app {
+  width: min(100%, 1000px);
+  padding: 2rem;
+}
